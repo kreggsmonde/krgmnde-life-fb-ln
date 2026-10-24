@@ -474,11 +474,12 @@ def generate_metadata(topic: str, duration_sec: float, chapters: list, ep_num: i
         s = int(ch.get("start_time", 0) % 60)
         lines.append(f"{m:02d}:{s:02d} - {ch['title']}")
 
+    clean_tag = config.CHANNEL_NAME.replace(" ", "").replace("'", "")
     lines.extend([
         "",
         "💡 Un voyage doux et éclairant au cœur de la psychologie des relations humaines, de l'amour et de l'intimité émotionnelle.",
         "👉 Abonnez-vous pour recevoir chaque semaine un nouvel épisode apaisant et inspirant.",
-        f"#{config.CHANNEL_NAME.replace(' ', '').replace('\'', '')} #Psychologie #RelationsHumaines #AmourEtCouple #PodcastFrancais #DeveloppementPersonnel #Attachement"
+        f"#{clean_tag} #Psychologie #RelationsHumaines #AmourEtCouple #PodcastFrancais #DeveloppementPersonnel #Attachement"
     ])
 
     return {
