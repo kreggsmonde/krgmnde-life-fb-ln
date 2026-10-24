@@ -1,0 +1,81 @@
+import os, sys
+from dotenv import load_dotenv
+
+load_dotenv()
+
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+INPUT_DIR = os.path.join(BASE_DIR, "input")
+OUTPUT_DIR = os.path.join(BASE_DIR, "output")
+TEMP_DIR = os.path.join(BASE_DIR, "temp")
+ASSETS_DIR = os.path.join(BASE_DIR, "assets")
+
+for d in [INPUT_DIR, OUTPUT_DIR, TEMP_DIR, ASSETS_DIR]:
+    os.makedirs(d, exist_ok=True)
+
+# Podcast & Channel Branding
+LANGUAGE = "French"
+LANGUAGE_CODE = "fr"
+CHANNEL_NAME = "L'ART DU LIEN"
+TAGLINE = "Psychologie des Relations, Amour & Connexions Humaines"
+DEFAULT_IMAGE_PATH = os.path.join(ASSETS_DIR, "host_studio.png")
+LOGO_PATH = os.path.join(ASSETS_DIR, "channel_logo.png")
+
+# Video Specs (1080p Landscape)
+VIDEO_WIDTH = 1920
+VIDEO_HEIGHT = 1080
+VIDEO_FPS = 30
+
+# Solo Host Setup (Host is on the left X: 0-800; Subtitles & Visualizer on the right X: 900-1850)
+IS_SOLO = True
+
+# Subtitle Bubble & Pill Layout
+SUBTITLE_CENTER_X = 1380
+SUBTITLE_Y = 320
+MAX_SUBTITLE_WIDTH = 760
+SUBTITLE_FONT_SIZE = 42
+
+# Audio Spectrum Visualizer
+VIS_CENTER_X = 1380
+VIS_BASE_Y = 580
+VIS_NUM_BARS = 18
+VIS_BAR_WIDTH = 12
+VIS_BAR_SPACING = 10
+VIS_MIN_HEIGHT = 4
+VIS_MAX_HEIGHT = 58
+VIS_COLOR = (255, 215, 0, 240)  # Radiant warm gold
+
+# Voice & Host Configuration (Solo Female Host)
+VOICE_HOST1 = "fr-FR-VivienneMultilingualNeural"  # Expressive, ultra-natural, warm French female voice
+VOICE_FALLBACK = "fr-FR-DeniseNeural"
+HOST1_NAME = "Élodie"
+HOST1_SPEAKER = "female"
+HOST1_PITCH = "+0Hz"
+TTS_RATE = "-3%"  # Intimate, reflective, thoughtful pacing
+PAUSE_BETWEEN_TURNS = 0.55
+
+# Subtitle line breaking limits
+MAX_WORDS_PER_LINE = 5
+MAX_CHARS_PER_LINE = 36
+
+# Pollinations AI Prompting (Loaded from environment / Windows user variables)
+POLLINATIONS_API_KEY = os.environ.get("POLLINATIONS_API_KEY", "")
+POLLINATIONS_ENDPOINT = os.environ.get("POLLINATIONS_ENDPOINT", "https://gen.pollinations.ai/v1/chat/completions")
+POLLINATIONS_MODEL = os.environ.get("POLLINATIONS_MODEL", "gemini-fast")
+
+NICHE_PROMPT = (
+    "un podcast captivant, profond et bienveillant animé par une femme psychologue et conseillère relationnelle française. "
+    "Elle explore avec sensibilité et nuance l'art des relations humaines, les langages de l'amour, l'attachement émotionnel, "
+    "la communication bienveillante, l'intimité, la vulnérabilité, la pose de limites saines, et la guérison émotionnelle. "
+    "Le ton est doux, éclairant, intime, rassurant et profondément réconfortant pour l'auditeur."
+)
+SYSTEM_LANGUAGE_INSTRUCTION = "Générer tout le contenu entièrement en français élégant, naturel et captivant, avec une touche poétique et psychologique bienveillante."
+
+# System Fonts
+FONT_CANDIDATES = [
+    "C:\\Windows\\Fonts\\arialbd.ttf",
+    "C:\\Windows\\Fonts\\segoeuib.ttf",
+    "C:\\Windows\\Fonts\\arial.ttf",
+    "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf"
+]
+FONT_PATH = next((p for p in FONT_CANDIDATES if os.path.exists(p)), "arial.ttf")
+FALLBACK_FONT_PATH = FONT_PATH
