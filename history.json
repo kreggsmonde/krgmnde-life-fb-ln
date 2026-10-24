@@ -28,5 +28,15 @@
     "video_file": "podcast_ep3_20261024_192455.mp4",
     "thumbnail_file": "thumb_ep3_20261024_192455.jpg",
     "platform": "Local"
+  },
+  {
+    "episode": 3,
+    "topic": "La Tendresse : Le Ciment Invisible de nos Liens",
+    "date": "2026-10-24T15:01:07.574322",
+    "duration_sec": 1228.14,
+    "duration_min": 20.47,
+    "video_file": "podcast_ep3_20261024_144949.mp4",
+    "thumbnail_file": "thumb_ep3_20261024_144949.jpg",
+    "platform": "Facebook"
   }
 ]
