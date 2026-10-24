@@ -45,13 +45,13 @@ VIS_MAX_HEIGHT = 58
 VIS_COLOR = (255, 215, 0, 240)  # Radiant warm gold
 
 # Voice & Host Configuration (Solo Female Host)
-VOICE_HOST1 = "fr-FR-VivienneMultilingualNeural"  # Expressive, ultra-natural, warm French female voice
-VOICE_FALLBACK = "fr-FR-DeniseNeural"
+VOICE_HOST1 = "fr-FR-DeniseNeural"  # Gold-standard realistic, warm, mature French host
+VOICE_FALLBACK = "fr-FR-VivienneMultilingualNeural"
 HOST1_NAME = "Élodie"
 HOST1_SPEAKER = "female"
 HOST1_PITCH = "+0Hz"
-TTS_RATE = "-3%"  # Intimate, reflective, thoughtful pacing
-PAUSE_BETWEEN_TURNS = 0.55
+TTS_RATE = "-6%"  # Gentle, calm, soothing, reflective therapy pace (not rushed)
+PAUSE_BETWEEN_TURNS = 0.75  # Natural human breathing space between spoken turns
 
 # Subtitle line breaking limits
 MAX_WORDS_PER_LINE = 5

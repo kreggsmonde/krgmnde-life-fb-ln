@@ -431,7 +431,8 @@ def generate_full_podcast_story(target_minutes: float = 20.0, topic: str = None,
 
     print(f"[StoryGenerator] Épisode #{ep_num} - Thématique : '{selected_topic}'")
 
-    turns_per_act = int(max(4, (target_minutes * 60) / (len(acts_meta) * 6.0)))
+    # Target 20 minutes calibrated with slower -6% speech rate and 0.75s natural pauses (~6.5s per turn)
+    turns_per_act = int(max(4, (target_minutes * 60) / (len(acts_meta) * 6.5)))
     if target_minutes <= 1.0:
         turns_per_act = 4
     elif target_minutes <= 3.0:
