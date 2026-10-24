@@ -19,6 +19,16 @@ const PODCAST_HISTORY = [
     "video_file": "podcast_ep2_20261024_174805.mp4",
     "thumbnail_file": "thumb_ep2_20261024_174805.jpg",
     "platform": "Local"
+  },
+  {
+    "episode": 3,
+    "topic": "L'Art de s'Écouter dans le Couple",
+    "date": "2026-10-24T19:28:11.300109",
+    "duration_sec": 125.22,
+    "duration_min": 2.09,
+    "video_file": "podcast_ep3_20261024_192455.mp4",
+    "thumbnail_file": "thumb_ep3_20261024_192455.jpg",
+    "platform": "Local"
   }
 ];
 if (typeof module !== 'undefined' && module.exports) { module.exports = PODCAST_HISTORY; }
