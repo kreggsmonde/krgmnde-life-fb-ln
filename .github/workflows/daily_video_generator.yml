@@ -45,11 +45,10 @@ jobs:
           python-version: '3.11'
           cache: 'pip'
 
-      - name: Install System Dependencies
+      - name: Verify FFmpeg & Fonts
         run: |
-          sudo apt-get update
-          sudo apt-get install -y ffmpeg fonts-dejavu fonts-freefont-ttf
-          sudo fc-cache -fv
+          which ffmpeg
+          ffmpeg -version | head -n 2
 
       - name: Install Python Dependencies
         run: |
