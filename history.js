@@ -39,6 +39,16 @@ const PODCAST_HISTORY = [
     "video_file": "podcast_ep3_20261024_144949.mp4",
     "thumbnail_file": "thumb_ep3_20261024_144949.jpg",
     "platform": "Facebook"
+  },
+  {
+    "episode": 4,
+    "topic": "Naviguer les Zones d'Ombre : La Confrontation Bienveillante",
+    "date": "2026-10-25T07:27:14.889543",
+    "duration_sec": 1312.36,
+    "duration_min": 21.87,
+    "video_file": "podcast_ep4_20261025_070816.mp4",
+    "thumbnail_file": "thumb_ep4_20261025_070816.jpg",
+    "platform": "Facebook"
   }
 ];
 if (typeof module !== 'undefined' && module.exports) { module.exports = PODCAST_HISTORY; }
