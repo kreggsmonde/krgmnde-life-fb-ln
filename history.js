@@ -49,6 +49,16 @@ const PODCAST_HISTORY = [
     "video_file": "podcast_ep4_20261025_070816.mp4",
     "thumbnail_file": "thumb_ep4_20261025_070816.jpg",
     "platform": "Facebook"
+  },
+  {
+    "episode": 5,
+    "topic": "L'Art d'Aimer en Toute Sécurité : Construire un Attachement Serein",
+    "date": "2026-10-26T07:34:08.022015",
+    "duration_sec": 1289.22,
+    "duration_min": 21.49,
+    "video_file": "podcast_ep5_20261026_071517.mp4",
+    "thumbnail_file": "thumb_ep5_20261026_071517.jpg",
+    "platform": "Facebook"
   }
 ];
 if (typeof module !== 'undefined' && module.exports) { module.exports = PODCAST_HISTORY; }
