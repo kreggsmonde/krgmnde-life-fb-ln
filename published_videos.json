@@ -58,5 +58,15 @@
     "video_file": "podcast_ep5_20261026_071517.mp4",
     "thumbnail_file": "thumb_ep5_20261026_071517.jpg",
     "platform": "Facebook"
+  },
+  {
+    "episode": 6,
+    "topic": "L'Art de Dire 'Je T'aime' Sans le Dire : La Communication Non Verbale en Amour",
+    "date": "2026-10-27T07:24:31.274667",
+    "duration_sec": 1346.91,
+    "duration_min": 22.45,
+    "video_file": "podcast_ep6_20261027_070525.mp4",
+    "thumbnail_file": "thumb_ep6_20261027_070525.jpg",
+    "platform": "Facebook"
   }
 ]
