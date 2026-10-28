@@ -68,5 +68,15 @@
     "video_file": "podcast_ep6_20261027_070525.mp4",
     "thumbnail_file": "thumb_ep6_20261027_070525.jpg",
     "platform": "Facebook"
+  },
+  {
+    "episode": 7,
+    "topic": "L'Art de Cultiver la Confiance : Le Terreau de l'Amour Durable",
+    "date": "2026-10-28T08:02:55.968433",
+    "duration_sec": 1250.05,
+    "duration_min": 20.83,
+    "video_file": "podcast_ep7_20261028_074514.mp4",
+    "thumbnail_file": "thumb_ep7_20261028_074514.jpg",
+    "platform": "Facebook"
   }
 ]
