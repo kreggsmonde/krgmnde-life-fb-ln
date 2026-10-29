@@ -78,5 +78,15 @@
     "video_file": "podcast_ep7_20261028_074514.mp4",
     "thumbnail_file": "thumb_ep7_20261028_074514.jpg",
     "platform": "Facebook"
+  },
+  {
+    "episode": 8,
+    "topic": "L'Art de Cultiver la Joie Partagée : Le Bonheur à Deux",
+    "date": "2026-10-29T08:04:38.094544",
+    "duration_sec": 1213.57,
+    "duration_min": 20.23,
+    "video_file": "podcast_ep8_20261029_075134.mp4",
+    "thumbnail_file": "thumb_ep8_20261029_075134.jpg",
+    "platform": "Facebook"
   }
 ]
