@@ -357,10 +357,11 @@ def generate_act_ai(act_idx: int, act_title: str, topic_title: str, focus: str, 
         f"- Exactement {target_turns} répliques de monologue successives prononcées par {config.HOST1_NAME}.\n"
         f"- Chaque réplique doit faire entre 14 et 24 mots, avec un style parlé naturel, fluide, touchant et élégant.\n"
         f"- Vocabulaire psychologique accessible, empreint de bienveillance, de nuances et de sagesse émotionnelle.\n"
+        f"- Chaque objet DOIT aussi inclure un champ \"en\" avec une traduction anglaise naturelle et fluide de \"text\" (sous-titres uniquement, jamais prononcée).\n"
         f"- Renvoie UNIQUEMENT un tableau JSON brut d'objets (pas de markdown, pas de texte d'accompagnement) :\n"
         f"[\n"
-        f'  {{"speaker": "{config.HOST1_SPEAKER}", "name": "{config.HOST1_NAME}", "text": "..."}},\n'
-        f'  {{"speaker": "{config.HOST1_SPEAKER}", "name": "{config.HOST1_NAME}", "text": "..."}}\n'
+        f'  {{"speaker": "{config.HOST1_SPEAKER}", "name": "{config.HOST1_NAME}", "text": "...", "en": "..."}},\n'
+        f'  {{"speaker": "{config.HOST1_SPEAKER}", "name": "{config.HOST1_NAME}", "text": "...", "en": "..."}}\n'
         f"]"
     )
 
@@ -393,7 +394,7 @@ def generate_act_ai(act_idx: int, act_title: str, topic_title: str, focus: str, 
                     txt = p.get("text", "").strip()
                     if not txt:
                         continue
-                    result_turns.append({"speaker": config.HOST1_SPEAKER, "name": config.HOST1_NAME, "text": txt})
+                    result_turns.append({"speaker": config.HOST1_SPEAKER, "name": config.HOST1_NAME, "text": txt, "en": p.get("en", "").strip()})
 
                 # Sanitize repetitive greetings in Acts 2-5
                 if act_idx > 0 and result_turns:

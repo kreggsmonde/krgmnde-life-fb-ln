@@ -18,6 +18,27 @@ def render_podcast_video(image_path: str, audio_path: str, subtitle_chunks: list
     draw_base = ImageDraw.Draw(base_img)
     font_path = config.FONT_PATH if os.path.exists(config.FONT_PATH) else config.FALLBACK_FONT_PATH
     sub_font = ImageFont.truetype(font_path, config.SUBTITLE_FONT_SIZE)
+    # Bilingual subtitles: smaller English translation line below the French.
+    en_font_size = max(26, int(config.SUBTITLE_FONT_SIZE * 0.72))
+    en_font = ImageFont.truetype(font_path, en_font_size)
+    en_color = (176, 196, 222)
+    en_line_h = en_font_size + 12
+
+    def wrap_en(text, font, max_w):
+        sp = draw_base.textbbox((0, 0), " ", font=font)[2]
+        out, cur, cur_w = [], [], 0
+        for w in text.split():
+            ww = draw_base.textbbox((0, 0), w, font=font)[2]
+            add = ww if not cur else sp + ww
+            if cur and cur_w + add > max_w:
+                out.append(" ".join(cur))
+                cur, cur_w = [w], ww
+            else:
+                cur.append(w)
+                cur_w += add
+        if cur:
+            out.append(" ".join(cur))
+        return out
     f_footer = ImageFont.truetype(font_path, 24)
 
     # Footer separator line & subtle tagline (clean and elegant, no top corner logos or channel badges)
@@ -150,6 +171,27 @@ def render_podcast_video(image_path: str, audio_path: str, subtitle_chunks: list
                 "sy": config.SUBTITLE_Y
             }]
 
+        # Fit English translation line(s) under the French subtitle.
+        en_text = (c.get("en") or "").strip()
+        en_draw_lines = []
+        if en_text:
+            for en_line in wrap_en(en_text, en_font, max_text_w):
+                en_w = draw_base.textbbox((0, 0), en_line, font=en_font)[2]
+                en_draw_lines.append({"text": en_line, "w": en_w})
+        if en_draw_lines:
+            pill_w = max(pill_right - pill_left, max(d["w"] for d in en_draw_lines) + pill_pad_x * 2)
+            ideal_left = config.SUBTITLE_CENTER_X - (pill_w // 2)
+            pill_left = max(safe_left, min(ideal_left, safe_right - pill_w))
+            pill_right = pill_left + pill_w
+            for ld in lines:
+                ld["sx"] = pill_left + (pill_w - ld["line_w"]) // 2
+            en_sy = pill_bot - 2
+            for d in en_draw_lines:
+                d["sx"] = pill_left + (pill_w - d["w"]) // 2
+                d["sy"] = en_sy
+                en_sy += en_line_h
+            pill_bot = en_sy - en_line_h + en_font_size + 14
+
         processed_chunks.append({
             "start": c["start"],
             "end": c["end"],
@@ -157,7 +199,9 @@ def render_podcast_video(image_path: str, audio_path: str, subtitle_chunks: list
             "font": c_font,
             "space_w": space_w,
             "pill_box": (pill_left, pill_top, pill_right, pill_bot),
-            "lines": lines
+            "lines": lines,
+            "en_lines": en_draw_lines,
+            "en_font": en_font
         })
 
     active_chunk_idx = 0
@@ -204,6 +248,9 @@ def render_podcast_video(image_path: str, audio_path: str, subtitle_chunks: list
                     # Active gold / Inactive white text
                     draw.text((curr_x, sy), wm["word"], fill=color, font=c_font)
                     curr_x += wm["width"] + space_w
+            for ed in chunk.get("en_lines", []):
+                draw.text((ed["sx"] + 2, ed["sy"] + 2), ed["text"], fill=(0, 0, 0, 220), font=chunk["en_font"])
+                draw.text((ed["sx"], ed["sy"]), ed["text"], fill=en_color, font=chunk["en_font"])
 
         raw_bgr = np.array(frame_img.convert("RGB"))[:, :, ::-1].tobytes()
         pipe.stdin.write(raw_bgr)

@@ -146,6 +146,7 @@ async def generate_podcast_audio(dialogue: list) -> tuple:
             res["speaker"] = config.HOST1_SPEAKER
             res["name"] = config.HOST1_NAME
             res["turn_text"] = text
+            res["en"] = turn.get("en", "")
             if (idx + 1) % 20 == 0 or idx == len(dialogue) - 1:
                 print(f"  [Progression TTS] Synthétisé {idx + 1}/{len(dialogue)} tours")
             await asyncio.sleep(0.35)
@@ -173,6 +174,7 @@ async def generate_podcast_audio(dialogue: list) -> tuple:
         )
         for c in turn_chunks:
             c["turn_idx"] = idx
+            c["en"] = turn_res.get("en", "")
             all_chunks.append(c)
 
         master_audio += turn_res["audio_segment"]
