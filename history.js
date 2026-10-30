@@ -89,6 +89,16 @@ const PODCAST_HISTORY = [
     "video_file": "podcast_ep8_20261029_075134.mp4",
     "thumbnail_file": "thumb_ep8_20261029_075134.jpg",
     "platform": "Facebook"
+  },
+  {
+    "episode": 9,
+    "topic": "L'Art d'Évoluer Ensemble : Quand Nos Chemins Divergent",
+    "date": "2026-10-30T08:14:58.286367",
+    "duration_sec": 1327.52,
+    "duration_min": 22.13,
+    "video_file": "podcast_ep9_20261030_075501.mp4",
+    "thumbnail_file": "thumb_ep9_20261030_075501.jpg",
+    "platform": "Facebook"
   }
 ];
 if (typeof module !== 'undefined' && module.exports) { module.exports = PODCAST_HISTORY; }
