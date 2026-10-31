@@ -98,5 +98,15 @@
     "video_file": "podcast_ep9_20261030_075501.mp4",
     "thumbnail_file": "thumb_ep9_20261030_075501.jpg",
     "platform": "Facebook"
+  },
+  {
+    "episode": 10,
+    "topic": "L'Art de se Retrouver : Réinventer l'Amour Après la Routine",
+    "date": "2026-10-31T08:02:56.812014",
+    "duration_sec": 1256.48,
+    "duration_min": 20.94,
+    "video_file": "podcast_ep10_20261031_074717.mp4",
+    "thumbnail_file": "thumb_ep10_20261031_074717.jpg",
+    "platform": "Facebook"
   }
 ]
