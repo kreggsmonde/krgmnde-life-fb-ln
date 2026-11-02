@@ -119,6 +119,16 @@ const PODCAST_HISTORY = [
     "video_file": "podcast_ep11_20261101_082738.mp4",
     "thumbnail_file": "thumb_ep11_20261101_082738.jpg",
     "platform": "Facebook"
+  },
+  {
+    "episode": 12,
+    "topic": "L'Art de Cultiver la Gratitude : Le Secret d'un Amour Qui Dure",
+    "date": "2026-11-02T08:58:20.209352",
+    "duration_sec": 1250.34,
+    "duration_min": 20.84,
+    "video_file": "podcast_ep12_20261102_083940.mp4",
+    "thumbnail_file": "thumb_ep12_20261102_083940.jpg",
+    "platform": "Facebook"
   }
 ];
 if (typeof module !== 'undefined' && module.exports) { module.exports = PODCAST_HISTORY; }
