@@ -129,6 +129,16 @@ const PODCAST_HISTORY = [
     "video_file": "podcast_ep12_20261102_083940.mp4",
     "thumbnail_file": "thumb_ep12_20261102_083940.jpg",
     "platform": "Facebook"
+  },
+  {
+    "episode": 13,
+    "topic": "L’Art de Reconnaître ses Déclencheurs : Quand l’Amour Réagit à la Place de l’Âme",
+    "date": "2026-11-03T09:11:57.810338",
+    "duration_sec": 1280.08,
+    "duration_min": 21.33,
+    "video_file": "podcast_ep13_20261103_085205.mp4",
+    "thumbnail_file": "thumb_ep13_20261103_085205.jpg",
+    "platform": "Facebook"
   }
 ];
 if (typeof module !== 'undefined' && module.exports) { module.exports = PODCAST_HISTORY; }
