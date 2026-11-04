@@ -138,5 +138,15 @@
     "video_file": "podcast_ep13_20261103_085205.mp4",
     "thumbnail_file": "thumb_ep13_20261103_085205.jpg",
     "platform": "Facebook"
+  },
+  {
+    "episode": 14,
+    "topic": "L'Art de Négocier ses Besoins : Demander avec douceur, poser des limites avec amour",
+    "date": "2026-11-04T08:41:07.866201",
+    "duration_sec": 1315.04,
+    "duration_min": 21.92,
+    "video_file": "podcast_ep14_20261104_082105.mp4",
+    "thumbnail_file": "thumb_ep14_20261104_082105.jpg",
+    "platform": "Facebook"
   }
 ]
