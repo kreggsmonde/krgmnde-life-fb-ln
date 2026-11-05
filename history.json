@@ -148,5 +148,15 @@
     "video_file": "podcast_ep14_20261104_082105.mp4",
     "thumbnail_file": "thumb_ep14_20261104_082105.jpg",
     "platform": "Facebook"
+  },
+  {
+    "episode": 15,
+    "topic": "L’Art de Réparer Après une Blague qui blesse : Guérir sans s’excuser à l’infini",
+    "date": "2026-11-05T09:06:55.889085",
+    "duration_sec": 1344.76,
+    "duration_min": 22.41,
+    "video_file": "podcast_ep15_20261105_084633.mp4",
+    "thumbnail_file": "thumb_ep15_20261105_084633.jpg",
+    "platform": "Facebook"
   }
 ]
