@@ -169,6 +169,16 @@ const PODCAST_HISTORY = [
     "video_file": "podcast_ep16_20261106_084722.mp4",
     "thumbnail_file": "thumb_ep16_20261106_084722.jpg",
     "platform": "Facebook"
+  },
+  {
+    "episode": 17,
+    "topic": "L’Art de Changer de Conversation : Transformer un Conflit en Connexion",
+    "date": "2026-11-07T08:24:07.631631",
+    "duration_sec": 1273.26,
+    "duration_min": 21.22,
+    "video_file": "podcast_ep17_20261107_080351.mp4",
+    "thumbnail_file": "thumb_ep17_20261107_080351.jpg",
+    "platform": "Facebook"
   }
 ];
 if (typeof module !== 'undefined' && module.exports) { module.exports = PODCAST_HISTORY; }
