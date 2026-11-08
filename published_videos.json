@@ -178,5 +178,15 @@
     "video_file": "podcast_ep17_20261107_080351.mp4",
     "thumbnail_file": "thumb_ep17_20261107_080351.jpg",
     "platform": "Facebook"
+  },
+  {
+    "episode": 18,
+    "topic": "L’Art de Retrouver son Cap : Quand l’Amour Devient Flou (et Comment Revenir à soi)",
+    "date": "2026-11-08T08:38:22.994943",
+    "duration_sec": 1313.17,
+    "duration_min": 21.89,
+    "video_file": "podcast_ep18_20261108_082220.mp4",
+    "thumbnail_file": "thumb_ep18_20261108_082220.jpg",
+    "platform": "Facebook"
   }
 ]
