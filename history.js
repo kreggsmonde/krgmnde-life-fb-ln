@@ -189,6 +189,16 @@ const PODCAST_HISTORY = [
     "video_file": "podcast_ep18_20261108_082220.mp4",
     "thumbnail_file": "thumb_ep18_20261108_082220.jpg",
     "platform": "Facebook"
+  },
+  {
+    "episode": 19,
+    "topic": "L’Art de Redessiner les Règles du Couple : Co-créer un « Nous » Qui Protège",
+    "date": "2026-11-09T09:14:33.467254",
+    "duration_sec": 1326.32,
+    "duration_min": 22.11,
+    "video_file": "podcast_ep19_20261109_085334.mp4",
+    "thumbnail_file": "thumb_ep19_20261109_085334.jpg",
+    "platform": "Facebook"
   }
 ];
 if (typeof module !== 'undefined' && module.exports) { module.exports = PODCAST_HISTORY; }
