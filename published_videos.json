@@ -198,5 +198,15 @@
     "video_file": "podcast_ep19_20261109_085334.mp4",
     "thumbnail_file": "thumb_ep19_20261109_085334.jpg",
     "platform": "Facebook"
+  },
+  {
+    "episode": 20,
+    "topic": "L’Art de Demander le Bon Réconfort : Quand l’Amour Réussit à Nous Apaiser",
+    "date": "2026-11-10T09:12:56.916542",
+    "duration_sec": 1397.46,
+    "duration_min": 23.29,
+    "video_file": "podcast_ep20_20261110_085935.mp4",
+    "thumbnail_file": "thumb_ep20_20261110_085935.jpg",
+    "platform": "Facebook"
   }
 ]
