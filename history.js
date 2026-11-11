@@ -209,6 +209,16 @@ const PODCAST_HISTORY = [
     "video_file": "podcast_ep20_20261110_085935.mp4",
     "thumbnail_file": "thumb_ep20_20261110_085935.jpg",
     "platform": "Facebook"
+  },
+  {
+    "episode": 21,
+    "topic": "L’Art de Dire Non avec Tendresse : Protéger le Lien sans Se Renier",
+    "date": "2026-11-11T08:54:25.005613",
+    "duration_sec": 1402.67,
+    "duration_min": 23.38,
+    "video_file": "podcast_ep21_20261111_084005.mp4",
+    "thumbnail_file": "thumb_ep21_20261111_084005.jpg",
+    "platform": "Facebook"
   }
 ];
 if (typeof module !== 'undefined' && module.exports) { module.exports = PODCAST_HISTORY; }
