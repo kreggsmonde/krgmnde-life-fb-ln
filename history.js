@@ -219,6 +219,16 @@ const PODCAST_HISTORY = [
     "video_file": "podcast_ep21_20261111_084005.mp4",
     "thumbnail_file": "thumb_ep21_20261111_084005.jpg",
     "platform": "Facebook"
+  },
+  {
+    "episode": 22,
+    "topic": "L’Art de Rester Calme Quand Ça Dérape : Apaiser le Conflit au Cœur du Couple",
+    "date": "2026-11-12T09:21:56.670131",
+    "duration_sec": 1346.12,
+    "duration_min": 22.44,
+    "video_file": "podcast_ep22_20261112_090040.mp4",
+    "thumbnail_file": "thumb_ep22_20261112_090040.jpg",
+    "platform": "Facebook"
   }
 ];
 if (typeof module !== 'undefined' && module.exports) { module.exports = PODCAST_HISTORY; }
