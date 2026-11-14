@@ -239,6 +239,16 @@ const PODCAST_HISTORY = [
     "video_file": "podcast_ep23_20261113_085538.mp4",
     "thumbnail_file": "thumb_ep23_20261113_085538.jpg",
     "platform": "Facebook"
+  },
+  {
+    "episode": 24,
+    "topic": "L’Art de Créer des Rituals de Proximité : Retrouver l’Autre au Quotidien",
+    "date": "2026-11-14T08:37:52.570546",
+    "duration_sec": 1331.17,
+    "duration_min": 22.19,
+    "video_file": "podcast_ep24_20261114_082108.mp4",
+    "thumbnail_file": "thumb_ep24_20261114_082108.jpg",
+    "platform": "Facebook"
   }
 ];
 if (typeof module !== 'undefined' && module.exports) { module.exports = PODCAST_HISTORY; }
