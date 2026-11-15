@@ -249,6 +249,16 @@ const PODCAST_HISTORY = [
     "video_file": "podcast_ep24_20261114_082108.mp4",
     "thumbnail_file": "thumb_ep24_20261114_082108.jpg",
     "platform": "Facebook"
+  },
+  {
+    "episode": 25,
+    "topic": "L’Art de Retrouver sa Sécurité Relationnelle : Apaiser l’Anxiété d’Amour",
+    "date": "2026-11-15T08:56:12.567537",
+    "duration_sec": 1312.16,
+    "duration_min": 21.87,
+    "video_file": "podcast_ep25_20261115_083952.mp4",
+    "thumbnail_file": "thumb_ep25_20261115_083952.jpg",
+    "platform": "Facebook"
   }
 ];
 if (typeof module !== 'undefined' && module.exports) { module.exports = PODCAST_HISTORY; }
