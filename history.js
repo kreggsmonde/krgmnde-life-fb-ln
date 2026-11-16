@@ -259,6 +259,16 @@ const PODCAST_HISTORY = [
     "video_file": "podcast_ep25_20261115_083952.mp4",
     "thumbnail_file": "thumb_ep25_20261115_083952.jpg",
     "platform": "Facebook"
+  },
+  {
+    "episode": 26,
+    "topic": "L’Art de Reconnaître l’Amour en Train de S’Éteindre : Prévenir la Distanciation",
+    "date": "2026-11-16T09:09:23.100689",
+    "duration_sec": 1403.96,
+    "duration_min": 23.4,
+    "video_file": "podcast_ep26_20261116_084850.mp4",
+    "thumbnail_file": "thumb_ep26_20261116_084850.jpg",
+    "platform": "Facebook"
   }
 ];
 if (typeof module !== 'undefined' && module.exports) { module.exports = PODCAST_HISTORY; }
