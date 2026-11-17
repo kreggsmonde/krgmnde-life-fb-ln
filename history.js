@@ -269,6 +269,16 @@ const PODCAST_HISTORY = [
     "video_file": "podcast_ep26_20261116_084850.mp4",
     "thumbnail_file": "thumb_ep26_20261116_084850.jpg",
     "platform": "Facebook"
+  },
+  {
+    "episode": 27,
+    "topic": "L’Art de Demander à Être Choisi : Réclamer la Proximité Sans Attendre la Fuite",
+    "date": "2026-11-17T10:08:01.778493",
+    "duration_sec": 1295.99,
+    "duration_min": 21.6,
+    "video_file": "podcast_ep27_20261117_095516.mp4",
+    "thumbnail_file": "thumb_ep27_20261117_095516.jpg",
+    "platform": "Facebook"
   }
 ];
 if (typeof module !== 'undefined' && module.exports) { module.exports = PODCAST_HISTORY; }
