@@ -279,6 +279,16 @@ const PODCAST_HISTORY = [
     "video_file": "podcast_ep27_20261117_095516.mp4",
     "thumbnail_file": "thumb_ep27_20261117_095516.jpg",
     "platform": "Facebook"
+  },
+  {
+    "episode": 28,
+    "topic": "L’Art de Remettre du Doux : Quand le Couple se Parle… avec Blessure",
+    "date": "2026-11-18T09:48:28.015646",
+    "duration_sec": 1332.76,
+    "duration_min": 22.21,
+    "video_file": "podcast_ep28_20261118_093019.mp4",
+    "thumbnail_file": "thumb_ep28_20261118_093019.jpg",
+    "platform": "Facebook"
   }
 ];
 if (typeof module !== 'undefined' && module.exports) { module.exports = PODCAST_HISTORY; }
