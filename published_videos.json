@@ -288,5 +288,15 @@
     "video_file": "podcast_ep28_20261118_093019.mp4",
     "thumbnail_file": "thumb_ep28_20261118_093019.jpg",
     "platform": "Facebook"
+  },
+  {
+    "episode": 29,
+    "topic": "L’Art de Tenir sa Promesse Affectueuse : Restaurer la Sécurité Quand on Dit « Je Serai Là »",
+    "date": "2026-11-19T10:02:04.029986",
+    "duration_sec": 1338.68,
+    "duration_min": 22.31,
+    "video_file": "podcast_ep29_20261119_094119.mp4",
+    "thumbnail_file": "thumb_ep29_20261119_094119.jpg",
+    "platform": "Facebook"
   }
 ]
