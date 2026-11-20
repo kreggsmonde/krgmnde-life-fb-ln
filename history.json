@@ -298,5 +298,15 @@
     "video_file": "podcast_ep29_20261119_094119.mp4",
     "thumbnail_file": "thumb_ep29_20261119_094119.jpg",
     "platform": "Facebook"
+  },
+  {
+    "episode": 30,
+    "topic": "L’Art de Dire la Vérité Sans Déclencher : Clarifier pour Rester Aimant",
+    "date": "2026-11-20T09:45:09.522445",
+    "duration_sec": 1349.1,
+    "duration_min": 22.48,
+    "video_file": "podcast_ep30_20261120_092857.mp4",
+    "thumbnail_file": "thumb_ep30_20261120_092857.jpg",
+    "platform": "Facebook"
   }
 ]
