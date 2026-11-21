@@ -309,6 +309,16 @@ const PODCAST_HISTORY = [
     "video_file": "podcast_ep30_20261120_092857.mp4",
     "thumbnail_file": "thumb_ep30_20261120_092857.jpg",
     "platform": "Facebook"
+  },
+  {
+    "episode": 31,
+    "topic": "L’Art de Sortir du Cycle : Quand l’On Se Met à Tourner en Rond en Amour",
+    "date": "2026-11-21T09:13:11.352564",
+    "duration_sec": 1313.0,
+    "duration_min": 21.88,
+    "video_file": "podcast_ep31_20261121_085929.mp4",
+    "thumbnail_file": "thumb_ep31_20261121_085929.jpg",
+    "platform": "Facebook"
   }
 ];
 if (typeof module !== 'undefined' && module.exports) { module.exports = PODCAST_HISTORY; }
