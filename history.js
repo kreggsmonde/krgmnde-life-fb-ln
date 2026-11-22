@@ -319,6 +319,16 @@ const PODCAST_HISTORY = [
     "video_file": "podcast_ep31_20261121_085929.mp4",
     "thumbnail_file": "thumb_ep31_20261121_085929.jpg",
     "platform": "Facebook"
+  },
+  {
+    "episode": 32,
+    "topic": "L’Art de Revenir Après l’Absence : Retrouver l’Autre sans Rejouer le Passé",
+    "date": "2026-11-22T09:19:36.176702",
+    "duration_sec": 1399.79,
+    "duration_min": 23.33,
+    "video_file": "podcast_ep32_20261122_090643.mp4",
+    "thumbnail_file": "thumb_ep32_20261122_090643.jpg",
+    "platform": "Facebook"
   }
 ];
 if (typeof module !== 'undefined' && module.exports) { module.exports = PODCAST_HISTORY; }
