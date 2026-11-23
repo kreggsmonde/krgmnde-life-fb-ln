@@ -329,6 +329,16 @@ const PODCAST_HISTORY = [
     "video_file": "podcast_ep32_20261122_090643.mp4",
     "thumbnail_file": "thumb_ep32_20261122_090643.jpg",
     "platform": "Facebook"
+  },
+  {
+    "episode": 33,
+    "topic": "L’Art de Rendre les Silences Parlants : Apaiser l’Abandon Relationnel",
+    "date": "2026-11-23T10:22:27.694258",
+    "duration_sec": 1382.87,
+    "duration_min": 23.05,
+    "video_file": "podcast_ep33_20261123_100040.mp4",
+    "thumbnail_file": "thumb_ep33_20261123_100040.jpg",
+    "platform": "Facebook"
   }
 ];
 if (typeof module !== 'undefined' && module.exports) { module.exports = PODCAST_HISTORY; }
