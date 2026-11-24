@@ -338,5 +338,15 @@
     "video_file": "podcast_ep33_20261123_100040.mp4",
     "thumbnail_file": "thumb_ep33_20261123_100040.jpg",
     "platform": "Facebook"
+  },
+  {
+    "episode": 34,
+    "topic": "L’Art de Demander la Proximité au Bon Moment : Quand l’Instinct Sait, mais le Cœur Hésite",
+    "date": "2026-11-24T12:08:58.798198",
+    "duration_sec": 1299.73,
+    "duration_min": 21.66,
+    "video_file": "podcast_ep34_20261124_115214.mp4",
+    "thumbnail_file": "thumb_ep34_20261124_115214.jpg",
+    "platform": "Facebook"
   }
 ]
