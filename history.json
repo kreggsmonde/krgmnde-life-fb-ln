@@ -348,5 +348,15 @@
     "video_file": "podcast_ep34_20261124_115214.mp4",
     "thumbnail_file": "thumb_ep34_20261124_115214.jpg",
     "platform": "Facebook"
+  },
+  {
+    "episode": 35,
+    "topic": "L’Art de Demander une Réparation : Réduire la Distance Après un Malentendu",
+    "date": "2026-11-25T11:02:50.427169",
+    "duration_sec": 1314.08,
+    "duration_min": 21.9,
+    "video_file": "podcast_ep35_20261125_104325.mp4",
+    "thumbnail_file": "thumb_ep35_20261125_104325.jpg",
+    "platform": "Facebook"
   }
 ]
