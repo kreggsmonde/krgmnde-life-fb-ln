@@ -359,6 +359,16 @@ const PODCAST_HISTORY = [
     "video_file": "podcast_ep35_20261125_104325.mp4",
     "thumbnail_file": "thumb_ep35_20261125_104325.jpg",
     "platform": "Facebook"
+  },
+  {
+    "episode": 36,
+    "topic": "L’Art de Revenir au « Nous » : Quand la Proximité Fait Peur",
+    "date": "2026-11-26T10:27:19.505120",
+    "duration_sec": 1304.48,
+    "duration_min": 21.74,
+    "video_file": "podcast_ep36_20261126_101414.mp4",
+    "thumbnail_file": "thumb_ep36_20261126_101414.jpg",
+    "platform": "Facebook"
   }
 ];
 if (typeof module !== 'undefined' && module.exports) { module.exports = PODCAST_HISTORY; }
