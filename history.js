@@ -379,6 +379,16 @@ const PODCAST_HISTORY = [
     "video_file": "podcast_ep37_20261127_102052.mp4",
     "thumbnail_file": "thumb_ep37_20261127_102052.jpg",
     "platform": "Local"
+  },
+  {
+    "episode": 38,
+    "topic": "L’Art de Ré-accorder le Tendre : Quand le Désir S’Eloigne (sans Se Détacher)",
+    "date": "2026-11-28T09:59:30.697598",
+    "duration_sec": 1324.31,
+    "duration_min": 22.07,
+    "video_file": "podcast_ep38_20261128_093859.mp4",
+    "thumbnail_file": "thumb_ep38_20261128_093859.jpg",
+    "platform": "Local"
   }
 ];
 if (typeof module !== 'undefined' && module.exports) { module.exports = PODCAST_HISTORY; }
